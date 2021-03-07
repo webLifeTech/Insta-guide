@@ -1,0 +1,7 @@
+{
+  "name": "insta-guide",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
