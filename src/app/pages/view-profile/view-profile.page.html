@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border pro-header" [mode]="gs.appMode">
+  <ion-toolbar>
+    <ion-title *ngIf="name == 'Latest Girls' || name == 'Popular Girls'" class="main-title">alicia_garcia_428
+    </ion-title>
+    <ion-title *ngIf="name == 'Latest Boys' || name == 'Popular Boys'" class="main-title">joao_pereira_18</ion-title>
+    <ion-title *ngIf="name == 'Buth New' || name == 'Buth Famous'" class="main-title">instabio-swagbios_027</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="nc.pop()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <section class="profile-sect">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12">
+          <ul>
+            <li>
+              <img *ngIf="name == 'Latest Girls' || name == 'Popular Girls'"
+                src="https://i.pinimg.com/originals/d0/7a/f6/d07af684a67cd52d2f10acd6208db98f.jpg" />
+              <img *ngIf="name == 'Latest Boys' || name == 'Popular Boys'"
+                src="https://i.pinimg.com/originals/6e/23/57/6e2357d8e745fcd882cd8d75634280e4.png" />
+              <img *ngIf="name == 'Buth New' || name == 'Buth Famous'" [src]=gs.imageUrl />
+            </li>
+            <li>
+              <h5>490</h5>
+              <p>Posts</p>
+            </li>
+            <li>
+              <h5>3.7M</h5>
+              <p>Followers</p>
+            </li>
+            <li>
+              <h5>27</h5>
+              <p>Following</p>
+            </li>
+          </ul>
+        </ion-col>
+        <ion-col class="bio-sect" size="12">
+          <p *ngFor="let item of getBioData">{{item}}</p>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button color="dark" class="ion-text-capitalize edit-btn" expand="block" fill="outline">
+            Edit Profile
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+  <section class="feeds-sect">
+    <ion-row>
+      <ng-container *ngFor="let item of [1,2,3]">
+        <ion-col size="4">
+          <img *ngIf="name == 'Latest Girls' || name == 'Popular Girls'"
+            src="https://i.pinimg.com/originals/d0/7a/f6/d07af684a67cd52d2f10acd6208db98f.jpg" />
+          <img *ngIf="name == 'Latest Boys' || name == 'Popular Boys'"
+            src="https://i.pinimg.com/736x/dc/35/6b/dc356b79251f53a14894838203d5a671.jpg" />
+          <!-- <img *ngIf="name == 'Buth New' || name == 'Buth Famous'" [src]=gs.imageUrl /> -->
+        </ion-col>
+      </ng-container>
+    </ion-row>
+  </section>
+</ion-content>

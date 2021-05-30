@@ -1,0 +1,62 @@
+<ion-header [mode]="gs.appMode">
+  <ion-toolbar color="secondary">
+    <ion-title>For You</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="gs.appShare()">
+        <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="medium">
+  <ion-list class="setting_card">
+    <ion-item lines="none">
+      <ion-icon color="primary" slot="start" name="settings-outline"></ion-icon>
+      <ion-label color="primary">
+        <b>App Settings</b>
+      </ion-label>
+    </ion-item>
+    <ion-card>
+      <ion-item button lines="none" (click)="gs.appShare()">
+        <ion-icon color="primary" name="share-social" slot="start"></ion-icon>
+        <ion-label color="primary">Share App</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item button lines="none" (click)="gs.rateApp()">
+        <ion-icon color="primary" name="star" slot="start"></ion-icon>
+        <ion-label color="primary">Rate App</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item button lines="none" (click)="gs.moreApp()">
+        <ion-icon color="primary" name="apps" slot="start"></ion-icon>
+        <ion-label color="primary">More Apps</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item button lines="none">
+        <ion-icon color="primary" name="phone-portrait-outline" slot="start"></ion-icon>
+        <ion-label color="primary">App Verson {{gs.crVersion}}
+        </ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+  <br>
+  <!-- <ion-list class="setting_card">
+    <ion-item lines="none">
+      <ion-icon color="primary" slot="start" name="help"></ion-icon>
+      <ion-label color="primary">
+        <b>Help</b>
+      </ion-label>
+    </ion-item>
+    <ion-card>
+      <ion-item lines="none">
+        <ion-icon color="primary" name="pizza" slot="start"></ion-icon>
+        <ion-label color="primary">How to use</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list> -->
+</ion-content>

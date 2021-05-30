@@ -1,0 +1,38 @@
+<ion-header [mode]="gs.appMode">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-button (click)="gs.rateApp()">
+        <ion-icon slot="icon-only" name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="main-title ion-text-center">Instabios</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="gs.appShare()">
+        <ion-icon slot="icon-only" name="share-social"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+  <div class="divider1"></div>
+  <div class="divider2"></div>
+  <div class="divider3"></div>
+  <div class="divider4"></div>
+  <ion-grid fixed *ngIf="gs.getAllBios.length">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6" *ngFor="let item of gs.getAllBios;let i = index">
+        <ion-card button [mode]="gs.appMode" (click)="goBioList(item)" class="ion-no-margin" style="height: 100%;">
+          <ion-card-content>
+            <div class="ion-text-center">
+              <ion-icon *ngIf="item.icon" [name]="item.icon" color="primary" style="font-size: 45px;"></ion-icon>
+              <img *ngIf="item.logo" [src]="item.logo" alt="" width="45px">
+              <p *ngIf="item.emoji" style="font-size: 45px;">{{item.emoji}}</p>
+              <h2 style="color: black;font-weight: bold;margin-top: 16px;">{{item.name}}</h2>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

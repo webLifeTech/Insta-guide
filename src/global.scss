@@ -24,3 +24,61 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+// @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+// @font-face{
+//     font-family: 'Hind Siliguri', sans-serif;
+//     src: url('assets/fonts/Hind_Siliguri/HindSiliguri-Bold.ttf')
+// }
+
+.custom_card{
+    min-height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 0px 4px 0px #ea2467;
+}
+
+.divider1{
+    background: #eb236726;
+    height: 133px;
+    border-radius: 155px;
+    position: fixed;
+    bottom: -37px;
+    width: 133px;
+    left: -37px;
+    z-index: -1;
+}
+.divider2{
+    background: linear-gradient(45deg, #eb236726, #fe7aa736);
+    height: 133px;
+    border-radius: 40px;
+    position: fixed;
+    top: 0px;
+    width: 133px;
+    right: -38px;
+    z-index: -1;
+}
+.divider3{
+    background: linear-gradient(
+        45deg
+        , #eb236726, #fe7aa736);
+            height: 133px;
+            border-radius: 40px;
+            position: fixed;
+            width: 133px;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.divider4{
+    background: linear-gradient(
+        45deg
+        , #eb236726, #fe7aa736);
+            height: 133px;
+            border-radius: 100px;
+            position: fixed;
+            bottom: 63px;
+            width: 133px;
+            right: -38px;
+            z-index: -1;
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372177684520",
+    "project_id": "insta-bio---swag-bios",
+    "storage_bucket": "insta-bio---swag-bios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372177684520:android:8ee850c5c70064dc168d1d",
+        "android_client_info": {
+          "package_name": "com.lifetechs.instabioswagbios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372177684520-uo0ob57kapb2ic4ujh8d904iht8jc173.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQqdsCoQfuFIp62YpPzKlgmMT-WUts3WQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372177684520-uo0ob57kapb2ic4ujh8d904iht8jc173.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
